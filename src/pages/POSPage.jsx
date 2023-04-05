@@ -95,18 +95,18 @@ function POSPage() {
           ) : (
             <div className="row">
               {products.map((product, key) => (
-                <div key={key} className="col-lg-4 mb-4">
+                <div key={key} className="col-lg-4 mb-2">
                   <div
-                    className="pos-item px-3 text-center border"
+                    className="pos-item px-3 text-center rounded"
                     onClick={() => addProductToCart(product)}
                   >
-                    <p>{product.name}</p>
+                    <p className="pt-3 text-dark">{product.name}</p>
                     <img
                       src={product.image}
-                      className="img-fluid"
+                      className="img-fluid rounded"
                       alt={product.name}
                     />
-                    <p>${product.price}</p>
+                    <p className="p-3 text-dark">${product.price}</p>
                   </div>
                 </div>
               ))}
@@ -121,7 +121,7 @@ function POSPage() {
               ref={componentRef}
             />
           </div>
-          <div className="table-responsive bg-dark">
+          <div className="table-responsive bg-dark rounded">
             <table className="table table-responsive table-dark table-hover">
               <thead>
                 <tr>
@@ -155,7 +155,7 @@ function POSPage() {
                   : "No Item in Cart"}
               </tbody>
             </table>
-            <h5 className="px-2 text-white">Total Amount: ${totalAmount}</h5>
+            <h6 className="px-2 text-white">Total Amount: ${totalAmount}</h6>
           </div>
 
           <div className="mt-3">
