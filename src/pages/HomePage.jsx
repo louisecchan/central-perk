@@ -7,17 +7,16 @@ function HomePage() {
     <MainLayout>
       <div className="bg-light p-5 mt-4 rounded-3">
         <h1>
-          Welcome to Central Perk - <br />
-          the POS for coffee shops.
+          Welcome to Central Perk Point of Sale - <br />
+          The POS system that's easy to set up and use.
         </h1>
+        <br />
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
-          laborum quae aperiam repellat suscipit delectus cumque quos excepturi
-          sapiente maxime! Voluptate, porro? Aspernatur rerum necessitatibus
-          nulla qui pariatur placeat inventore.
+          The bespoke POS system built for coffee shops of all shapes and sizes.
         </p>
         <p>If you have an issue, call 020 7101 7661 anytime.</p>
-        <Link to="/pos" className="btn btn-primary">
+        <br />
+        <Link to="/pos" className="btn btn-dark">
           Click here to sell items
         </Link>
       </div>
