@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 function HomePage() {
   return (
     <MainLayout>
-      <div className="bg-light p-5 mt-4 rounded-3">
+      <div className="bg-light p-5 m-5 rounded-3">
         <h1>
           Welcome to Central Perk Point of Sale - <br />
           The POS system that's easy to set up and use.
