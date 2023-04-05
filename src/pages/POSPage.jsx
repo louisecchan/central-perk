@@ -121,7 +121,7 @@ function POSPage() {
               ref={componentRef}
             />
           </div>
-          <div className="table-responsive bg-dark rounded">
+          <div className="table-responsive p-2 m-3 bg-dark rounded">
             <table className="table table-responsive table-dark table-hover">
               <thead>
                 <tr>
@@ -158,10 +158,10 @@ function POSPage() {
             <h6 className="px-2 text-white">Total Amount: ${totalAmount}</h6>
           </div>
 
-          <div className="mt-3">
+          <div className="p-2 m-2">
             {totalAmount !== 0 ? (
               <div>
-                <button className="btn btn-primary" onClick={handlePrint}>
+                <button className="btn btn-secondary" onClick={handlePrint}>
                   Pay Now
                 </button>
               </div>
