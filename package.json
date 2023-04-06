@@ -2,7 +2,8 @@
   "name": "central-perk",
   "version": "0.1.0",
   "engines": {
-    "node": "19.6.0"
+    "node": "19.6.0",
+    "npm": "8.19.3"
   },
   "private": true,
   "dependencies": {
