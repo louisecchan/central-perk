@@ -85,7 +85,7 @@ function POSPage() {
     cart.forEach((icart) => {
       newTotalAmount = newTotalAmount + parseInt(icart.totalAmount);
     });
-    setTotalAmount(newTotalAmount);
+    setTotalAmount(Math.round((newTotalAmount * 100) / 100));
   }, [cart]);
 
   return (
@@ -164,7 +164,7 @@ function POSPage() {
             {totalAmount !== 0 ? (
               <div>
                 <button className="btn btn-secondary" onClick={handlePrint}>
-                  Pay Now
+                  Print Receipt
                 </button>
               </div>
             ) : (
