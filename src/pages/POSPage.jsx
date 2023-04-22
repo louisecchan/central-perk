@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { ComponentToPrint } from "../components/ComponentToPrint";
 import { useReactToPrint } from "react-to-print";
+import "./posPage.css";
 
 function POSPage() {
   const [products, setProducts] = useState([]);
@@ -99,7 +100,7 @@ function POSPage() {
               {products.map((product, key) => (
                 <div key={key} className="col-lg-4 mb-2">
                   <div
-                    className="pos-item px-3 text-center rounded"
+                    className="pos-item px-3 text-center"
                     onClick={() => addProductToCart(product)}
                   >
                     <p className="pt-3 text-dark">{product.name}</p>
