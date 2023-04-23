@@ -125,7 +125,7 @@ function POSPage() {
             />
           </div>
           <div className="container">
-            <div className="table-responsive p-2 m-2 bg-dark rounded">
+            <div className="table-responsive m-2 bg-dark rounded">
               <table className="table table-responsive table-dark table-hover">
                 <thead>
                   <tr>
