@@ -124,53 +124,57 @@ function POSPage() {
               ref={componentRef}
             />
           </div>
-          <div className="table-responsive p-2 m-3 bg-dark rounded">
-            <table className="table table-responsive table-dark table-hover">
-              <thead>
-                <tr>
-                  <td>#</td>
-                  <td>Name</td>
-                  <td>Price</td>
-                  <td>Qty</td>
-                  <td>Total</td>
-                  <td>Action</td>
-                </tr>
-              </thead>
-              <tbody>
-                {cart
-                  ? cart.map((cartProduct, key) => (
-                      <tr key={key}>
-                        <td>{cartProduct.id}</td>
-                        <td>{cartProduct.name}</td>
-                        <td>{cartProduct.price}</td>
-                        <td>{cartProduct.quantity}</td>
-                        <td>{cartProduct.totalAmount}</td>
-                        <td>
-                          <button
-                            className="btn btn-danger btn-sm"
-                            onClick={() => removeProduct(cartProduct)}
-                          >
-                            Remove
-                          </button>
-                        </td>
-                      </tr>
-                    ))
-                  : "No Item in Cart"}
-              </tbody>
-            </table>
-            <h6 className="px-2 text-white">Total Amount: ${totalAmount}</h6>
+          <div className="container">
+            <div className="table-responsive p-2 m-2 bg-dark rounded">
+              <table className="table table-responsive table-dark table-hover">
+                <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Qty</td>
+                    <td>Total</td>
+                    <td>Action</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cart
+                    ? cart.map((cartProduct, key) => (
+                        <tr key={key}>
+                          <td>{cartProduct.id}</td>
+                          <td>{cartProduct.name}</td>
+                          <td>{cartProduct.price}</td>
+                          <td>{cartProduct.quantity}</td>
+                          <td>{cartProduct.totalAmount}</td>
+                          <td>
+                            <button
+                              className="btn btn-danger btn-sm"
+                              onClick={() => removeProduct(cartProduct)}
+                            >
+                              Remove
+                            </button>
+                          </td>
+                        </tr>
+                      ))
+                    : "No Item in Cart"}
+                </tbody>
+              </table>
+              <h6 className="px-2 text-white">Total Amount: ${totalAmount}</h6>
+            </div>
           </div>
 
-          <div className="p-2 m-2">
-            {totalAmount !== 0 ? (
-              <div>
-                <button className="btn btn-secondary" onClick={handlePrint}>
-                  Print Receipt
-                </button>
-              </div>
-            ) : (
-              "Please add an item to the cart"
-            )}
+          <div className="print-container">
+            <div className="p-2 m-2">
+              {totalAmount !== 0 ? (
+                <div>
+                  <button className="btn-print rounded" onClick={handlePrint}>
+                    Print Receipt
+                  </button>
+                </div>
+              ) : (
+                <span>&nbsp; Please add an item to the cart</span>
+              )}
+            </div>
           </div>
         </div>
       </div>

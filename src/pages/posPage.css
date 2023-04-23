@@ -1,3 +1,35 @@
 * {
   font-weight: 500;
 }
+
+.container {
+  margin-top: 2.7rem;
+  margin-left: 1.8rem;
+}
+
+.btn-print {
+  width: 105%;
+  border: none !important;
+  cursor: pointer;
+  padding: 0.4rem 0rem;
+}
+
+.btn-print:hover {
+  border: none !important;
+  background-color: rgb(126, 123, 123);
+  color: white;
+  box-shadow: 3px 7px 7px rgba(100, 100, 100, 0.1);
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+.print-container {
+  margin-left: 2.5rem;
+}
+
+span {
+  padding-left: 1.2rem;
+}
