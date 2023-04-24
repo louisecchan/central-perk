@@ -7,7 +7,7 @@ h1 {
   border: none;
   background-color: rgb(23, 23, 23);
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
 }
 
