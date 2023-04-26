@@ -1,3 +1,26 @@
+@media screen and (max-width: 414px) {
+  .row {
+    margin-top: 1.5rem !important;
+  }
+  p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  span {
+    padding-left: 0rem !important;
+    text-transform: uppercase;
+  }
+
+  .print-container {
+    margin-left: 0rem !important;
+  }
+
+  .btn-print {
+    width: 100% !important;
+  }
+}
+
 * {
   font-weight: 500;
 }
