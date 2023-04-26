@@ -6,7 +6,7 @@ import "./homePage.css";
 function HomePage() {
   return (
     <MainLayout>
-      <div className="container">
+      <div className="container-main">
         <div className="bg-light p-5 m-5 rounded-3">
           <h1>Welcome to Central Perk POS</h1>
           <br />
@@ -18,7 +18,7 @@ function HomePage() {
             If you have an issue, call 020 7101 7661 anytime.
           </p>
           <br />
-          <Link to="/pos" className="btn">
+          <Link to="/pos" className="btn fadeInUp animated animatedFadeInUp">
             Click here to start
           </Link>
         </div>

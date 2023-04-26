@@ -36,3 +36,12 @@ h6 {
   -ms-transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
 }
+
+@font-face {
+  font-family: "Sohne";
+  src: url("./fonts/Sohne-Buch.otf") format("OpenType");
+}
+
+.font-face-s {
+  font-family: "Sohne";
+}

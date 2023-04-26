@@ -13,6 +13,15 @@
   }
 }
 
+@font-face {
+  font-family: "Sohne";
+  src: url("./fonts/Sohne-Buch.otf") format("opentype");
+}
+
+.font-face-s {
+  font-family: "Sohne";
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
