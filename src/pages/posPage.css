@@ -2,23 +2,9 @@
   .row {
     margin-top: 1.5rem !important;
   }
-  p {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
 
   span {
-    margin-left: 0.2rem;
     text-transform: uppercase;
-  }
-
-  td {
-    font-size: 1.2rem !important;
-  }
-
-  h6 {
-    font-size: 1.2rem !important;
   }
 
   .print-container {
@@ -41,15 +27,17 @@
 }
 
 .btn-print {
-  width: 105%;
+  width: 100%;
   border: none !important;
   cursor: pointer;
-  padding: 0.4rem 0rem;
+  padding: 0.5rem 0rem;
+  background-color: white;
+  color: #232222;
 }
 
 .btn-print:hover {
   border: none !important;
-  background-color: rgb(126, 123, 123);
+  background-color: #232222;
   color: white;
   box-shadow: 3px 7px 7px rgba(100, 100, 100, 0.1);
   transition: ease 0.3s;
@@ -60,9 +48,29 @@
 }
 
 .print-container {
-  margin-left: 2.7rem;
+  /* margin-left: 2.8rem; */
 }
 
 span {
-  padding-left: 1.2rem;
+  /* padding-left: 0.8rem; */
+  color: white;
+}
+
+p,
+span,
+td,
+h6,
+.btn-print {
+  font-family: "Sohne", Helvetica, sans-serif;
+}
+
+span,
+td,
+h6,
+.btn-print {
+  font-size: 0.9rem;
+}
+
+.btn-print {
+  font-weight: 600;
 }

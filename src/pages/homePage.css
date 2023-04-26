@@ -10,11 +10,19 @@
   .pos-desc {
     text-transform: none !important ;
     font-weight: normal !important;
+    font-size: 0.9rem !important;
+  }
+
+  .btn {
+    font-size: 0.9rem !important;
   }
 }
 
-h1 {
+body {
   font-family: "Sohne", Helvetica, sans-serif;
+}
+
+h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
 }

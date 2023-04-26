@@ -125,9 +125,9 @@ function POSPage() {
             />
           </div>
           <div className="container">
-            <div className="table-responsive m-2 bg-dark rounded">
-              <table className="table table-responsive table-dark table-hover">
-                <thead>
+            <div className="bg-dark rounded">
+              <table className="table table-light">
+                <thead className="thead-dark">
                   <tr>
                     <td>#</td>
                     <td>Name</td>
@@ -141,7 +141,7 @@ function POSPage() {
                   {cart
                     ? cart.map((cartProduct, key) => (
                         <tr key={key}>
-                          <td>{cartProduct.id}</td>
+                          <td className="table-head">{cartProduct.id}</td>
                           <td>{cartProduct.name}</td>
                           <td>{cartProduct.price}</td>
                           <td>{cartProduct.quantity}</td>
@@ -160,20 +160,22 @@ function POSPage() {
                 </tbody>
               </table>
               <h6 className="px-2 text-white">Total Amount: ${totalAmount}</h6>
-            </div>
-          </div>
-
-          <div className="print-container">
-            <div className="p-2 m-2">
-              {totalAmount !== 0 ? (
-                <div>
-                  <button className="btn-print rounded" onClick={handlePrint}>
-                    Print Receipt
-                  </button>
+              <div className="print-container">
+                <div className="p-2">
+                  {totalAmount !== 0 ? (
+                    <div>
+                      <button
+                        className="btn-print rounded"
+                        onClick={handlePrint}
+                      >
+                        Print receipt
+                      </button>
+                    </div>
+                  ) : (
+                    <span>Please add an item to the cart</span>
+                  )}
                 </div>
-              ) : (
-                <span>&nbsp; Please add an item to the cart</span>
-              )}
+              </div>
             </div>
           </div>
         </div>
