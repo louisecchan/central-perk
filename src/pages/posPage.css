@@ -7,9 +7,18 @@
     text-transform: uppercase;
     font-weight: 600;
   }
+
   span {
-    padding-left: 0rem !important;
+    margin-left: 0.2rem;
     text-transform: uppercase;
+  }
+
+  td {
+    font-size: 1.2rem !important;
+  }
+
+  h6 {
+    font-size: 1.2rem !important;
   }
 
   .print-container {
@@ -18,6 +27,7 @@
 
   .btn-print {
     width: 100% !important;
+    font-size: 1.3rem;
   }
 }
 

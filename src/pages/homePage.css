@@ -6,6 +6,10 @@
   .container {
     margin: 0 !important;
   }
+
+  .pos-desc {
+    text-transform: none !important ;
+  }
 }
 
 h1 {
