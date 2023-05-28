@@ -56,7 +56,10 @@ span {
   color: white;
 }
 
-p,
+p {
+  font-weight: 700;
+}
+
 span,
 td,
 h6,

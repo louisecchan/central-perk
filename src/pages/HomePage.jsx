@@ -12,11 +12,13 @@ function HomePage() {
           <br />
           <p className="pos-desc">
             The bespoke POS system built for coffee shops of all shapes and
-            sizes.
+            sizes. <br /> If you have an issue, call 020 7101 7661 anytime.
           </p>
-          <p className="pos-desc">
+          {/* <p className="pos-desc">
             If you have an issue, call 020 7101 7661 anytime.
-          </p>
+          </p> */}
+          <br />
+          <br />
           <br />
           <Link to="/pos" className="btn fadeInUp animated animatedFadeInUp">
             Click here to start
