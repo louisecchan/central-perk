@@ -127,14 +127,14 @@ function POSPage() {
           <div className="container">
             <div className="bg-dark rounded">
               <table className="table table-light">
-                <thead className="thead-dark">
+                <thead className="thead-dark cart-header">
                   <tr>
                     <td class="cart-title">#</td>
                     <td class="cart-title">Name</td>
                     <td class="cart-title">Price</td>
                     <td class="cart-title">Qty</td>
                     <td class="cart-title">Total</td>
-                    <td class="cart-title">Action</td>
+                    <td class="cart-title">&nbsp;Action</td>
                   </tr>
                 </thead>
                 <tbody>
