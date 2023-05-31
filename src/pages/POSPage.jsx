@@ -128,7 +128,7 @@ function POSPage() {
             <div className="bg-dark rounded">
               <table className="table table-light">
                 <thead className="thead-dark">
-                  <tr>
+                  <tr class="cart-title">
                     <td>#</td>
                     <td>Name</td>
                     <td>Price</td>

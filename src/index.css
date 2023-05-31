@@ -17,6 +17,10 @@ h6 {
   font-weight: bold;
 }
 
+.navbar-brand {
+  padding-left: 1.2rem;
+}
+
 .pos-item {
   cursor: pointer;
   font-weight: bold;
