@@ -159,9 +159,11 @@ function POSPage() {
                     : "No Item in Cart"}
                 </tbody>
               </table>
-              <h6 className="px-2 text-white">Total Amount: ${totalAmount}</h6>
+              {/* <div className="p-3"> */}
+              <h6 className="p-3 text-white">Total Amount: ${totalAmount}</h6>
+              {/* </div> */}
               <div className="print-container">
-                <div className="p-2">
+                <div className="p-3">
                   {totalAmount !== 0 ? (
                     <div>
                       <button
@@ -172,7 +174,10 @@ function POSPage() {
                       </button>
                     </div>
                   ) : (
-                    <span>Please add an item to the cart</span>
+                    <span>
+                      <br />
+                      Please add an item to the cart
+                    </span>
                   )}
                 </div>
               </div>
