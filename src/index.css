@@ -47,7 +47,7 @@ h6 {
 
 @font-face {
   font-family: "Aspira";
-  src: url("./fonts/Aspira-Bold.otf") format("opentype");
+  src: url("./fonts/Aspira-Medium.otf") format("opentype");
 }
 
 .font-face-s {
