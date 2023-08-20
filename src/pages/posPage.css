@@ -18,6 +18,12 @@
     margin-top: 1.5rem !important;
   }
 
+  .loading-text {
+    position: absolute !important;
+    top: 20% !important;
+    left: -45% !important;
+  }
+
   .table {
     margin-top: -1.25rem !important;
     position: relative !important;
@@ -79,7 +85,7 @@
   margin-top: -1.5rem;
 }
 
-.loadingText {
+.loading-text {
   margin-left: 20rem;
   margin-top: 15rem;
 }
