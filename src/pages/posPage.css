@@ -1,3 +1,14 @@
+@media screen and (max-width: 850px) {
+  .container-calculator {
+    margin-left: -2.5rem !important;
+    margin-right: 2rem !important;
+  }
+
+  td {
+    width: 90vw !important;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .pos-item {
     width: 98% !important;
