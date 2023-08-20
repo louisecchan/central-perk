@@ -56,11 +56,17 @@
     font-weight: normal !important;
     font-size: 3.1rem !important;
     text-align: center;
+    justify-content: cente !important;
     line-height: 100% !important;
   }
 
   .pos-desc-2 {
     margin-top: 0rem !important;
+  }
+
+  .row {
+    width: 99% !important;
+    margin-left: 0.18rem !important;
   }
 
   .start-btn {
