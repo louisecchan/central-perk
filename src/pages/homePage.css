@@ -34,20 +34,25 @@
     font-size: 1.3rem !important;
   }
 
+  .contact-text {
+    display: none !important;
+  }
+
   .container {
     margin: 0 !important;
   }
 
   .container-main {
     position: absolute;
-    top: 5.5% !important;
+    top: 7% !important;
     left: -2% !important;
+    margin: -1.8rem !important;
   }
 
   .pos-desc-1 {
     text-transform: none !important ;
     font-weight: normal !important;
-    font-size: 2.1rem !important;
+    font-size: 3.3rem !important;
     text-align: center;
   }
 
@@ -90,7 +95,8 @@ h2 {
   left: 20%;
 }
 
-.pos-desc-1 {
+.pos-desc-1,
+.contact-text {
   font-family: "Sohne Bold", Arial, Helvetica, sans-serif;
   font-weight: normal !important;
   font-size: 4.2rem;
