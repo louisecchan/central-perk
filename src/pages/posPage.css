@@ -18,44 +18,47 @@
     margin-top: 1.5rem !important;
   }
 
+  .table {
+    margin-top: -1.25rem !important;
+    position: relative !important;
+    left: 0.5% !important;
+    width: 99.5% !important;
+  }
+
   .cart-title {
-    font-size: 0.6rem !important;
+    text-transform: uppercase !important;
+  }
+
+  .container-calculator {
+    margin-top: 1rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1.5rem !important;
   }
 
   .total-amount {
-    font-size: 0.8rem !important;
+    padding-left: 1rem !important;
+    font-size: 1rem !important;
   }
 
   .btn-danger {
     margin-top: 0rem !important;
     font-size: 0.6rem !important;
-  }
-
-  span {
-    font-size: 0.8rem !important;
-  }
-
-  td {
-    font-size: 0.6rem !important;
-    width: 90% !important;
-  }
-
-  .container {
-    padding: 0 !important;
-  }
-
-  .container-calculator {
-    margin-left: -0.5rem !important;
-    margin-right: 0.5rem !important;
+    text-transform: uppercase !important;
   }
 
   .print-container {
+    padding: 1rem !important;
     margin-left: 0rem !important;
   }
 
   .btn-print {
     width: 100% !important;
     font-size: 1.3rem;
+    text-transform: uppercase !important;
+  }
+
+  span {
+    font-size: 0.8rem !important;
   }
 }
 
