@@ -1,0 +1,165 @@
+@media screen and (max-width: 414px) {
+  .pos-item {
+    width: 98% !important;
+  }
+
+  .row {
+    margin-top: 1.5rem !important;
+  }
+
+  .cart-title {
+    font-size: 0.6rem !important;
+  }
+
+  .total-amount {
+    font-size: 0.8rem !important;
+  }
+
+  .btn-danger {
+    margin-top: 0rem !important;
+    font-size: 0.6rem !important;
+  }
+
+  span {
+    font-size: 0.8rem !important;
+  }
+
+  td {
+    font-size: 0.6rem !important;
+  }
+
+  .container {
+    padding: 0 !important;
+  }
+
+  .print-container {
+    margin-left: 0rem !important;
+  }
+
+  .container-calculator {
+    margin: 1rem !important;
+    width: 90%;
+  }
+
+  .btn-print {
+    width: 100% !important;
+    font-size: 1.3rem;
+  }
+}
+
+* {
+  font-weight: 400;
+}
+
+.container {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.container-calculator {
+  margin-left: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.3rem;
+  padding-bottom: 0.5rem;
+  margin-top: -1.5rem;
+}
+
+.loadingText {
+  margin-left: 20rem;
+  margin-top: 15rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.btn-print {
+  width: 100%;
+  border: none !important;
+  cursor: pointer;
+  padding: 0.5rem 0rem;
+  background-color: white;
+  color: #232222;
+}
+
+.btn-print:hover {
+  border: none !important;
+  background-color: #000000;
+  color: white;
+  /* box-shadow: 3px 7px 7px rgba(100, 100, 100, 0.1); */
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+td {
+  text-align: center;
+}
+
+span {
+  color: white;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+span,
+td,
+h6,
+.btn-print {
+  font-family: "Sohne", Helvetica, sans-serif;
+}
+
+span,
+td,
+h6,
+.btn-print {
+  font-size: 0.9rem;
+}
+
+h5 {
+  font-size: 0.98rem;
+  font-family: "Sohne Bold", Helvetica, sans-serif;
+  color: white;
+  padding-bottom: 0.3rem;
+}
+
+.total-amount {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-print-container {
+  margin-bottom: 1rem;
+}
+
+.btn-print {
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn-danger {
+  margin-top: -0.1rem;
+  font-size: 0.8rem;
+  background-color: maroon;
+}
+
+.btn-danger:hover {
+  color: maroon;
+  background-color: #f8f9fa;
+}
+
+.cart-title {
+  font-weight: 600;
+  margin-left: 0.5rem;
+  text-align: center;
+}
