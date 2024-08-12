@@ -9,9 +9,9 @@ function HomePage() {
       <div className="container-main">
         <div className="bg-black p-5 m-5 rounded-3">
           <p className="pos-desc-1">
-            A simple POS system built for coffee shops of all shapes and sizes.{" "}
+            A simple POS system built for coffee shops.{" "}
             <span className="contact-text">
-              Have questions? Call us at 020 7101 7661 any time.
+              Call us at 020 7101 7661 for help anytime.
             </span>
           </p>
           <br />
