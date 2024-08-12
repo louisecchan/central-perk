@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("./fonts/Sohne-Buch.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sohne Bold";
+  src: url("./fonts/Sohne-Halbfett.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sohne Fat";
+  src: url("./fonts/Sohne-Fat.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aspira";
+  src: url("./fonts/Aspira-Medium.otf") format("opentype");
+}
+
+.font-face-s {
+  font-family: "Sohne";
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
