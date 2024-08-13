@@ -20,6 +20,10 @@
 }
 
 @media screen and (max-width: 414px) {
+  /*.navbar-brand {*/
+  /*  padding-left: 1.5rem !important;*/
+  /*}*/
+
   .pos-item {
     width: 98% !important;
   }

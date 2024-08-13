@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import styled from 'styled-components';
 
 function MainLayout({ children }) {
     const location = useLocation();
@@ -10,7 +11,7 @@ function MainLayout({ children }) {
         marginLeft: location.pathname === "/" ? "0" : "-4.9rem",
         "@media (max-width: 420px)": {
             marginLeft: location.pathname === "/" ? "0" : "-2.2rem",
-        },
+            paddingLeft: location.pathname === "/" ? "0" : "1.5rem"}
     };
 
     return (

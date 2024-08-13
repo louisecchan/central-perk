@@ -2,6 +2,10 @@
   .container-main {
     top: 0% !important;
   }
+
+  .pos-desc-1 {
+    width: 60vw !important;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -35,6 +39,11 @@
 @media screen and (max-width: 414px) {
   a {
     font-size: 1.3rem !important;
+    z-index: 3 !important;
+  }
+
+  .navbar-brand {
+    padding-left: 3.8rem !important;
   }
 
   .contact-text {
