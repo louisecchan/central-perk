@@ -71,10 +71,6 @@
   font-weight: 400;
 }
 
-/*.navbar-brand {*/
-/*  margin-left: -4.9rem;*/
-/*}*/
-
 .container {
   margin-top: 3rem;
 }
@@ -98,6 +94,10 @@ table {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border-style: none;
 }
 
 .btn-print {
