@@ -10,8 +10,8 @@ function HomePage() {
         <div className="bg-black p-5 m-5 rounded-3">
           <p className="pos-desc-1">
             Built for cafes.{" "}
+            Built for you.
             <span className="contact-text">
-              Built for you.
             </span>
           </p>
           <br />

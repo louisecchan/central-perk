@@ -11,7 +11,8 @@
 
   .pos-desc-1,
   .contact-text {
-    font-size: 3.2rem !important ;
+    width: 55vw !important;
+    font-size: 3.2rem !important;
   }
 }
 
