@@ -20,9 +20,10 @@
 }
 
 @media screen and (max-width: 414px) {
-  /*.navbar-brand {*/
-  /*  padding-left: 1.5rem !important;*/
-  /*}*/
+  .navbar-brand.adjusted {
+    margin-left: 0 !important;
+    padding-left: 1.5rem !important;
+  }
 
   .pos-item {
     width: 98% !important;
@@ -85,6 +86,10 @@
   font-weight: 400;
 }
 
+.navbar-brand.adjusted {
+  margin-left: -4.9rem;
+}
+
 .container {
   margin-top: 3rem;
 }
@@ -140,7 +145,7 @@ td {
 }
 
 span {
-  color: white;
+  color: #b7b7b7;
 }
 
 p {
