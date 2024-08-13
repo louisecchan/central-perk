@@ -77,6 +77,10 @@
     display: flex !important;
   }
 
+  .start-btn:hover {
+    color: #b5b3b3;
+  }
+
   h2 {
     font-size: 1rem !important;
   }
