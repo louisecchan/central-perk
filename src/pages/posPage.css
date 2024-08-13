@@ -71,9 +71,12 @@
   font-weight: 400;
 }
 
+/*.navbar-brand {*/
+/*  margin-left: -4.9rem;*/
+/*}*/
+
 .container {
   margin-top: 3rem;
-  /*margin-left: 2rem;*/
 }
 
 .container-calculator {

@@ -105,6 +105,10 @@ h2 {
   margin-left: -0.65rem;
 }
 
+h5 {
+  font-weight: 400;
+}
+
 .container-main {
   margin-top: 4rem;
 }
