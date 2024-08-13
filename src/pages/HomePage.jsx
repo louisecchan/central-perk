@@ -9,15 +9,15 @@ function HomePage() {
       <div className="container-main">
         <div className="bg-black p-5 m-5 rounded-3">
           <p className="pos-desc-1">
-            A simple POS system built for coffee shops.{" "}
+            Built for cafes.{" "}
             <span className="contact-text">
-              Call us at 020 7101 7661 for help anytime.
+              Built for you.
             </span>
           </p>
           <br />
           <div className="start-btn">
             <Link to="/pos" className="btn fadeInUp animated animatedFadeInUp">
-              <h2>Click Here to Start</h2>
+              <h2>Get Started</h2>
             </Link>
           </div>
         </div>
