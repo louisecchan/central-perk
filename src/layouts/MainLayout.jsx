@@ -1,15 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function MainLayout({ children }) {
-  return (
+    const location = useLocation();
+
+    const navbarBrandStyle = {
+        marginLeft: location.pathname === "/" ? "0" : "-4.9rem",
+    };
+
+    return (
     <div>
       <header>
         <nav className="navbar">
           <div className="container">
-            <Link to="/" className="navbar-brand">
+            <Link to="/" className="navbar-brand" style={navbarBrandStyle}>
               Central Perk
             </Link>
           </div>
