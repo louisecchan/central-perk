@@ -8,6 +8,9 @@ function MainLayout({ children }) {
 
     const navbarBrandStyle = {
         marginLeft: location.pathname === "/" ? "0" : "-4.9rem",
+        "@media (max-width: 420px)": {
+            marginLeft: location.pathname === "/" ? "0" : "-2.2rem",
+        },
     };
 
     return (
