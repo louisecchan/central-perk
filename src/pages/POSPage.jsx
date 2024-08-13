@@ -108,6 +108,7 @@ function POSPage() {
                       src={product.image}
                       className="img-fluid rounded"
                       alt={product.name}
+                      loading="lazy"
                     />
                     <p className="p-3">${product.price}</p>
                   </div>
