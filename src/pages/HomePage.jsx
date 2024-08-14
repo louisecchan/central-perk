@@ -31,7 +31,7 @@ function HomePage() {
     const typingTimeout = setTimeout(handleTyping, isErasing ? typingSpeed / 2 : typingSpeed);
 
     return () => clearTimeout(typingTimeout);
-  }, [charIndex, isErasing, wordIndex]);
+  }, [charIndex, isErasing, wordIndex, words]);
 
   return (
     <MainLayout>
