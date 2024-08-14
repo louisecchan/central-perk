@@ -47,7 +47,7 @@
 
   .cart-title {
     text-transform: uppercase !important;
-  }x
+  }
 
   .container-calculator {
     margin-top: 1rem !important;
@@ -204,4 +204,6 @@ h5 {
   font-weight: 600;
   margin-left: 0.5rem;
   text-align: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
