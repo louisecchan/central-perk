@@ -54,6 +54,17 @@
   color: #61dafb;
 }
 
+#typing-text {
+  border-right: 2px solid black;
+  padding-right: 5px;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

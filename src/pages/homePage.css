@@ -119,14 +119,20 @@ h5 {
   margin-top: 4rem;
 }
 
-.pos-desc-1,
-.contact-text {
+
+
+.pos-desc-1 {
   font-family: "Sohne Bold", Arial, Helvetica, sans-serif;
   font-weight: normal !important;
   font-size: 4.2rem;
   line-height: 98%;
   letter-spacing: 0.05rem;
-  width: 75vw;
+  width: 76vw;
+
+  display: inline-block;
+  height: 10rem; /* Set this to the maximum height needed */
+  overflow: hidden; /* Ensures text doesn't overflow */
+  vertical-align: bottom; /* Adjust vertical alignment if needed */
 }
 
 .pos-desc-2 {
@@ -135,7 +141,6 @@ h5 {
 
 .btn {
   border: none;
-  /* background-color: rgb(23, 23, 23); */
   color: white;
   font-weight: 600;
   float: left;
