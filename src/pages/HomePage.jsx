@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import "./homePage.css";
 
+const words = ["you.", "happy staff.", "happy customers."];
+const typingSpeed = 150;
+const pauseBetweenWords = 2000;
+
 function HomePage() {
   const [displayText, setDisplayText] = useState("");
   const [isErasing, setIsErasing] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
   const [wordIndex, setWordIndex] = useState(0);
-  const words = ["you.", "happy staff.", "happy customers."];
-  const typingSpeed = 150;
-  const pauseBetweenWords = 2000;
 
   useEffect(() => {
     const handleTyping = () => {
@@ -31,7 +32,7 @@ function HomePage() {
     const typingTimeout = setTimeout(handleTyping, isErasing ? typingSpeed / 2 : typingSpeed);
 
     return () => clearTimeout(typingTimeout);
-  }, [charIndex, isErasing, wordIndex, words]);
+  }, [charIndex, isErasing, wordIndex]);
 
   return (
     <MainLayout>
