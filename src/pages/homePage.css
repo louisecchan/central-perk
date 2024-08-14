@@ -129,12 +129,12 @@ h5 {
   font-size: 4.2rem;
   line-height: 98%;
   letter-spacing: 0.05rem;
-  width: 76vw;
+  width: 75vw;
 
-  display: inline-block;
   height: 10rem; /* Set this to the maximum height needed */
   overflow: hidden; /* Ensures text doesn't overflow */
   vertical-align: bottom; /* Adjust vertical alignment if needed */
+  color: #FFF;
 }
 
 .pos-desc-2 {
