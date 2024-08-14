@@ -60,6 +60,43 @@
   animation: blink-caret 0.75s step-end infinite;
 }
 
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 24px;
+  color: black;
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+.typed-cursor{
+  opacity: 1;
+}
+
+.typed-cursor.typed-cursor--blink{
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black; }

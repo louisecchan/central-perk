@@ -125,7 +125,7 @@ function POSPage() {
               ref={componentRef}
             />
           </div>
-          <div className="container">
+          <div className="calculator container">
             <div className="bg-dark rounded container-calculator">
               <table className="table table-light rounded">
                 <thead className="thead-dark cart-header">

@@ -8,20 +8,12 @@ function MainLayout({ children }) {
 
     const navbarBrandClass = location.pathname === "/" ? "navbar-brand" : "navbar-brand adjusted";
 
-    // const navbarBrandStyle = {
-    //     marginLeft: location.pathname === "/" ? "0" : "-4.9rem",
-    //     "@media (max-width: 420px)": {
-    //         marginLeft: location.pathname === "/" ? "0" : "-2.2rem",
-    //         paddingLeft: location.pathname === "/" ? "0" : "1.5rem"}
-    // };
-
     return (
     <div>
       <header>
         <nav className="navbar">
           <div className="container">
               <Link to="/" className={navbarBrandClass}>
-            {/*<Link to="/" className="navbar-brand" style={navbarBrandStyle}>*/}
               Central Perk
             </Link>
           </div>
