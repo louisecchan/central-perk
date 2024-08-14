@@ -68,6 +68,8 @@
     text-align: left !important;
     justify-content: center !important;
     line-height: 100% !important;
+    height: 20rem !important;
+    width: 66vw !important;
   }
 
   .pos-desc-2 {
