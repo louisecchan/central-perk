@@ -12,7 +12,6 @@ function HomePage() {
   const [isErasing, setIsErasing] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
   const [wordIndex, setWordIndex] = useState(0);
-  const el = React.useRef(null);
 
   useEffect(() => {
     const handleTyping = () => {
