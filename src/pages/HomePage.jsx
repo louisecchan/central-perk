@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import "./homePage.css";
 
-const words = ["you.", "happy staff.", "happy customers."];
+const words = ["you.", "happy baristas.", "happy customers."];
 const typingSpeed = 150;
 const pauseBetweenWords = 2000;
 
