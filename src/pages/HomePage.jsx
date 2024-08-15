@@ -42,7 +42,6 @@ function HomePage() {
           <p className="pos-desc-1">
             Built for cafes.{" "}
             Built for <span className="pos-desc-1" id="typing-text">{displayText}</span>
-            {/*<span className="pos-desc-1 blinking-cursor">|</span>*/}
           </p>
           <br/>
           <div className="start-btn">

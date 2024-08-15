@@ -34,16 +34,12 @@
 @media screen and (max-width: 414px) {
   .navbar-brand.adjusted {
     margin-left: 0 !important;
-    padding-left: 1.5rem !important;
+    padding-left: 1.7rem !important;
   }
 
   .pos-item {
     width: 98% !important;
   }
-
-  /*.row {*/
-  /*  margin-top: 1.5rem !important;*/
-  /*}*/
 
   .loading-text {
     position: absolute !important;
@@ -213,7 +209,9 @@ h5 {
 }
 
 .cart-title {
-  font-weight: 600;
+  /*font-family: "Helvetica", sans-serif;*/
+  font-weight: 500;
+  text-transform: uppercase;
   margin-left: 0.5rem;
   text-align: center;
   -moz-osx-font-smoothing: grayscale;
