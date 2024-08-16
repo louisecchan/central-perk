@@ -63,6 +63,14 @@
     margin-right: 1.5rem !important;
   }
 
+  .Toastify__toast-body {
+      margin-left: 27px !important;
+  }
+
+  .Toastify__close-button > svg {
+      margin-right: 10px;
+  }
+
   .total-amount {
     padding-left: 1.1rem !important;
     font-size: 1rem !important;

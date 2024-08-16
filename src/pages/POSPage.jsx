@@ -14,6 +14,7 @@ function POSPage() {
 
   const toastOptions = {
     autoClose: 400,
+    // autoClose: 3000000,
     pauseonHover: true,
   };
 
