@@ -48,7 +48,7 @@
   }
 
   .table {
-    margin-top: -1.25rem !important;
+    /*margin-top: -1.25rem !important;*/
     position: relative !important;
     width: 98% !important;
   }
@@ -228,4 +228,11 @@ h5 {
 
 .calculater.container {
   max-height: 50vh;
+}
+
+.receipt-heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  padding: 20px;
 }
