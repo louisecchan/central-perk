@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 8.6rem !important;
+  }
+}
 
 @media screen and (max-width: 414px) {
   .navbar-brand {
