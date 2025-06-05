@@ -32,6 +32,23 @@
 }
 
 @media screen and (max-width: 414px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+    max-width: 100vw;
+  }
+
+  .container, .container-calculator, .table, .pos-item {
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+  }
+
   .navbar-brand.adjusted {
     margin-left: 0 !important;
     padding-left: 1.7rem !important;
