@@ -21,7 +21,7 @@ function POSPage() {
   const fetchProducts = async () => {
     setIsLoading(true);
     const result = await axios.get(
-      "https://my-json-server.typicode.com/louisecchan/pos-test/products"
+      "https://my-json-server.typicode.com/louisecchan/cafe-pos-json/products"
     );
     setProducts(await result.data);
     setIsLoading(false);
