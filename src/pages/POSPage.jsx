@@ -23,7 +23,7 @@ function POSPage() {
     const result = await axios.get(
       "https://my-json-server.typicode.com/louisecchan/cafe-pos-json/products"
     );
-    setProducts(await result.data);
+    setProducts(result.data);
     setIsLoading(false);
   };
 
