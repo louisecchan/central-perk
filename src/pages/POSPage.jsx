@@ -90,9 +90,9 @@ function POSPage() {
   useEffect(() => {
     let newTotalAmount = 0;
     cart.forEach((icart) => {
-      newTotalAmount = newTotalAmount + parseInt(icart.totalAmount);
+      newTotalAmount += Number(icart.totalAmount);
     });
-    setTotalAmount(Math.round((newTotalAmount * 100) / 100));
+    setTotalAmount(Math.ceil(newTotalAmount * 10) / 10);
   }, [cart]);
 
   return (
