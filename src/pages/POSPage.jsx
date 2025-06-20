@@ -15,16 +15,21 @@ function POSPage() {
   const toastOptions = {
     autoClose: 400,
     // autoClose: 3000000,
-    pauseonHover: true,
+    pauseOnHover: true,
   };
 
   const fetchProducts = async () => {
     setIsLoading(true);
-    const result = await axios.get(
-      "https://my-json-server.typicode.com/louisecchan/cafe-pos-json/products"
-    );
-    setProducts(result.data);
-    setIsLoading(false);
+    try {
+      const result = await axios.get(
+        "https://my-json-server.typicode.com/louisecchan/cafe-pos-json/products"
+      );
+      setProducts(result.data);
+    } catch (error) {
+      toast.error("Failed to fetch products", toastOptions);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const addProductToCart = async (product) => {
