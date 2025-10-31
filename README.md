@@ -4,7 +4,7 @@
 
 ## Demo
 
-Check out the live demo here: [Live App](https://substancepos.netlify.app/)
+Check out the live demo here: [Live App](https://centralperky.netlify.app/)
 
 ## Features
 
