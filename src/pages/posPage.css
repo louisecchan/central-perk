@@ -231,13 +231,13 @@ h5 {
 }
 
 .btn-print {
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
 }
 
 .btn-danger {
   margin-top: -0.1rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background-color: maroon;
 }
 
