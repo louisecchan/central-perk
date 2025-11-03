@@ -217,7 +217,7 @@
   }
 
   .pos-item h5 {
-    text-transform: uppercase !important;
+    text-transform: capitalize !important;
   }
 
   .loading-text {
