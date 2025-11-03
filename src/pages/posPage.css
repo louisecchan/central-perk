@@ -216,6 +216,10 @@
     width: 98% !important;
   }
 
+  .pos-item h5 {
+    text-transform: uppercase !important;
+  }
+
   .loading-text {
     position: absolute !important;
     top: 25% !important;
@@ -256,6 +260,7 @@
     margin-top: 0rem !important;
     font-size: 0.6rem !important;
     text-transform: uppercase !important;
+    width: 100% !important;
   }
 
   .print-container {
