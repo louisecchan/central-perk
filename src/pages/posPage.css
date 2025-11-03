@@ -447,3 +447,98 @@ h5 {
   color: #000 !important;
   text-transform: lowercase;
 }
+
+/* Mobile Receipt Modal Styles */
+.receipt-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.receipt-modal {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.receipt-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #232222;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  line-height: 1;
+  padding: 0;
+}
+
+.receipt-close-btn:hover {
+  background: #000;
+}
+
+.receipt-actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-mobile-print {
+  background-color: #232222;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Sohne", Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn-mobile-print:hover {
+  background-color: #000;
+}
+
+/* Hide modal elements when printing */
+@media print {
+  .receipt-modal-overlay {
+    background: none;
+    position: static;
+  }
+
+  .receipt-modal {
+    box-shadow: none;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .receipt-close-btn,
+  .receipt-actions {
+    display: none !important;
+  }
+}

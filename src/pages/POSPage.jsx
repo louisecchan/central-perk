@@ -6,6 +6,13 @@ import { ComponentToPrint } from "../components/ComponentToPrint";
 import { useReactToPrint } from "react-to-print";
 import "./posPage.css";
 
+// Helper function to detect mobile devices
+const isMobileDevice = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  ) || window.innerWidth <= 768;
+};
+
 const toastOptions = {
   autoClose: 400,
   // autoClose: 3000000,
@@ -17,6 +24,7 @@ function POSPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [cart, setCart] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
+  const [showReceipt, setShowReceipt] = useState(false);
 
   const fetchProducts = useCallback(async () => {
     setIsLoading(true);
@@ -94,7 +102,21 @@ function POSPage() {
   });
 
   const handlePrint = () => {
-    handleReactToPrint();
+    if (isMobileDevice()) {
+      // On mobile, show receipt in a modal/overlay instead
+      setShowReceipt(true);
+    } else {
+      // On desktop, use normal print
+      handleReactToPrint();
+    }
+  };
+
+  const handleCloseReceipt = () => {
+    setShowReceipt(false);
+  };
+
+  const handleMobilePrint = () => {
+    window.print();
   };
 
   useEffect(() => {
@@ -111,6 +133,27 @@ function POSPage() {
 
   return (
     <MainLayout>
+      {/* Mobile Receipt Modal */}
+      {showReceipt && (
+        <div className="receipt-modal-overlay">
+          <div className="receipt-modal">
+            <button className="receipt-close-btn" onClick={handleCloseReceipt}>
+              ✕
+            </button>
+            <ComponentToPrint
+              cart={cart}
+              totalAmount={totalAmount}
+              ref={componentRef}
+            />
+            <div className="receipt-actions">
+              <button className="btn-mobile-print" onClick={handleMobilePrint}>
+                Print Receipt
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="row">
         <div className="col-lg-8">
           {isLoading ? (
