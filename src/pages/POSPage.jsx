@@ -47,7 +47,9 @@ function POSPage() {
           newItem = {
             ...cartItem,
             quantity: cartItem.quantity + 1,
-            totalAmount: cartItem.price * (cartItem.quantity + 1),
+            totalAmount: Number(
+              (Number(cartItem.price) * (cartItem.quantity + 1)).toFixed(2)
+            ),
           };
           newCart.push(newItem);
         } else {
@@ -56,15 +58,27 @@ function POSPage() {
       });
 
       setCart(newCart);
-      toast(`Added ${product.name} to cart`, toastOptions);
+      toast(
+        <>
+          Added <span className="toast-product-name">{product.name}</span> to
+          cart
+        </>,
+        toastOptions
+      );
     } else {
       let addingProduct = {
         ...product,
         quantity: 1,
-        totalAmount: product.price,
+        totalAmount: Number(Number(product.price).toFixed(2)),
       };
       setCart([...cart, addingProduct]);
-      toast(`Added ${product.name} to cart`, toastOptions);
+      toast(
+        <>
+          Added <span className="toast-product-name">{product.name}</span> to
+          cart
+        </>,
+        toastOptions
+      );
     }
   };
 
@@ -92,7 +106,7 @@ function POSPage() {
     cart.forEach((icart) => {
       newTotalAmount += Number(icart.totalAmount);
     });
-    setTotalAmount(Math.ceil(newTotalAmount * 10) / 10);
+    setTotalAmount(Number(newTotalAmount.toFixed(2)));
   }, [cart]);
 
   return (
