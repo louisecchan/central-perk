@@ -72,6 +72,7 @@
 
   .cart-title {
     text-transform: uppercase !important;
+    font-size: 0.8rem !important;
   }
 
   .container-calculator {
@@ -117,6 +118,9 @@
 
 * {
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .navbar-brand.adjusted {
@@ -203,7 +207,7 @@ h6,
 
 h5 {
   font-size: 0.98rem;
-  font-family: "Sohne Bold", Helvetica, sans-serif;
+  font-family: "Sohne", Helvetica, sans-serif;
   color: white;
   padding-bottom: 0.3rem;
 }
@@ -239,6 +243,7 @@ h5 {
   text-transform: uppercase;
   margin-left: 0.5rem;
   text-align: center;
+  font-size: 0.8rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
