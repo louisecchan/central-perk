@@ -3,7 +3,7 @@ import React from "react";
 export const ComponentToPrint = React.forwardRef((props, ref) => {
   const { cart, totalAmount } = props;
   return (
-    <div ref={ref} className="p-5">
+    <div ref={ref} className="p-5" style={{ backgroundColor: 'white', color: 'black' }}>
       <table className="table">
         <thead>
           <tr className="receipt-heading">
@@ -34,9 +34,10 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
             : ""}
         </tbody>
       </table>
-      <h6 className="px-2">Total Amount: ${totalAmount}</h6>
-      <br></br>
-      <h6 className="px-2">Thank you!</h6>
+      <div style={{ marginTop: '30px', color: 'black', padding: '10px' }}>
+        <p style={{ color: 'black', marginBottom: '15px', fontSize: '16px', fontWeight: 'bold' }}>Total Amount: ${totalAmount}</p>
+        <p style={{ color: 'black', fontSize: '16px' }}>Thank you! Have a good one :)</p>
+      </div>
     </div>
   );
 });
