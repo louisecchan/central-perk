@@ -2,7 +2,6 @@
   .container-main {
     top: 0% !important;
   }
-
   .pos-desc-1 {
     width: 60vw !important;
     height: 15rem !important;
@@ -130,10 +129,6 @@ h5 {
   font-weight: 400;
 }
 
-.container-main {
-  margin-top: 4rem;
-}
-
 .pos-desc-1 {
   font-family: "Sohne Bold", Arial, Helvetica, sans-serif;
   font-weight: normal !important;
@@ -145,7 +140,7 @@ h5 {
   height: 10rem;
   overflow: hidden; /* Ensures text doesn't overflow */
   vertical-align: bottom; /* Adjust vertical alignment if needed */
-  color: #FFF;
+  color: #fff;
 }
 
 .pos-desc-2 {

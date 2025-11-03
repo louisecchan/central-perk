@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -6,19 +6,19 @@ import { ComponentToPrint } from "../components/ComponentToPrint";
 import { useReactToPrint } from "react-to-print";
 import "./posPage.css";
 
+const toastOptions = {
+  autoClose: 400,
+  // autoClose: 3000000,
+  pauseOnHover: true,
+};
+
 function POSPage() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [cart, setCart] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
 
-  const toastOptions = {
-    autoClose: 400,
-    // autoClose: 3000000,
-    pauseOnHover: true,
-  };
-
-  const fetchProducts = async () => {
+  const fetchProducts = useCallback(async () => {
     setIsLoading(true);
     try {
       const result = await axios.get(
@@ -30,7 +30,7 @@ function POSPage() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
 
   const addProductToCart = async (product) => {
     // check if the adding product exist
@@ -85,7 +85,7 @@ function POSPage() {
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [fetchProducts]);
 
   useEffect(() => {
     let newTotalAmount = 0;
