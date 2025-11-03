@@ -87,6 +87,33 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .navbar-brand.adjusted {
+    margin-left: 0 !important;
+    padding-left: 1rem !important;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .col-lg-4:not(.col-lg-8 .col-lg-4) {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .col-lg-8 .row .col-lg-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .table thead tr td:first-child,
+  .table tbody tr td:first-child {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 414px) {
   html,
   body {
