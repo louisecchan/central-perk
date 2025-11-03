@@ -5,7 +5,7 @@
   }
 
   .container {
-    margin-top: 2.6rem !important;;
+    margin-top: 2.6rem !important;
   }
 }
 
@@ -32,14 +32,18 @@
 }
 
 @media screen and (max-width: 414px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100vw;
     position: relative;
     max-width: 100vw;
   }
 
-  .container, .container-calculator, .table, .pos-item {
+  .container,
+  .container-calculator,
+  .table,
+  .pos-item {
     max-width: 100vw;
     width: 100%;
     padding-left: 0;
@@ -82,11 +86,11 @@
   }
 
   .Toastify__toast-body {
-      margin-left: 27px !important;
+    margin-left: 27px !important;
   }
 
   .Toastify__close-button > svg {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 
   .total-amount {
@@ -152,7 +156,12 @@ table {
   overflow: hidden;
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
   border-style: none;
 }
 
@@ -218,7 +227,7 @@ h5 {
 }
 
 .btn-print-container {
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
 }
 
 .btn-print {
