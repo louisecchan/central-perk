@@ -21,7 +21,7 @@ function MainLayout({ children }) {
         </nav>
       </header>
       <main>
-        <div className="container">{children}</div>
+        <div className="container hero">{children}</div>
         <ToastContainer hideProgressBar={true} />
       </main>
     </div>
