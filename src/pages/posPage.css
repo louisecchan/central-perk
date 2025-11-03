@@ -281,6 +281,10 @@
   span {
     font-size: 1rem !important;
   }
+
+  .table tbody tr td {
+    vertical-align: middle !important;
+  }
 }
 
 * {
