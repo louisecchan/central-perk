@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import "./homePage.css";
 
-const words = ["you.", "happy baristas.", "happy customers."];
-const typingSpeed = 150;
+const words = [" busy mornings.", " coffee lovers.", "the daily grind."];
+const typingSpeed = 75;
 const pauseBetweenWords = 2000;
 
 function HomePage() {
@@ -29,7 +29,10 @@ function HomePage() {
       }
     };
 
-    const typingTimeout = setTimeout(handleTyping, isErasing ? typingSpeed / 2 : typingSpeed);
+    const typingTimeout = setTimeout(
+      handleTyping,
+      isErasing ? typingSpeed / 2 : typingSpeed
+    );
 
     return () => clearTimeout(typingTimeout);
   }, [charIndex, isErasing, wordIndex]);
@@ -39,10 +42,14 @@ function HomePage() {
       <div className="container-main">
         <div className="bg-black p-5 m-5 rounded-3">
           <p className="pos-desc-1">
-            Built for cafes.{" "}
-            Built for <span className="pos-desc-1" id="typing-text">{displayText}</span>
+            Built for cafes.
+            <br />
+            Built for{" "}
+            <span className="pos-desc-1" id="typing-text">
+              {displayText}
+            </span>
           </p>
-          <br/>
+          <br />
           <div className="start-btn">
             <Link to="/pos" className="btn fadeInUp animated animatedFadeInUp">
               <h2>Get Started</h2>
