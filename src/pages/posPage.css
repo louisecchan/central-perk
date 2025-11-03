@@ -173,6 +173,7 @@ tr {
   padding: 0.5rem 0rem;
   background-color: white;
   color: #232222;
+  margin-bottom: 3px;
 }
 
 .btn-print:hover {
@@ -232,7 +233,7 @@ h5 {
 }
 
 .btn-print {
-  font-weight: 5r00;
+  font-weight: 500;
   width: 100%;
 }
 
