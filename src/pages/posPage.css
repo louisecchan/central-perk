@@ -267,3 +267,9 @@ h5 {
   text-align: center;
   padding: 20px;
 }
+
+.receipt-spacer td {
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+}
