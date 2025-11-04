@@ -490,8 +490,8 @@ h5 {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #232222;
-  color: white;
+  background: transparent;
+  color: black;
   border: none;
   border-radius: 50%;
   width: 35px;
@@ -507,7 +507,7 @@ h5 {
 }
 
 .receipt-close-btn:hover {
-  background: #000;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .receipt-actions {
