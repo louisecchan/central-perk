@@ -292,6 +292,11 @@
   .table tbody tr td {
     vertical-align: middle !important;
   }
+
+  .table thead tr td:nth-child(3),
+  .table tbody tr td:nth-child(3) {
+    display: none !important;
+  }
 }
 
 * {
