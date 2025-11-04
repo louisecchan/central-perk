@@ -25,6 +25,7 @@ function POSPage() {
   const [cart, setCart] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
   const [showReceipt, setShowReceipt] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(new Set());
 
   const fetchProducts = useCallback(async () => {
     setIsLoading(true);
@@ -33,6 +34,15 @@ function POSPage() {
         "https://my-json-server.typicode.com/louisecchan/cafe-pos-json/products"
       );
       setProducts(result.data);
+      
+      // Preload images
+      result.data.forEach((product) => {
+        const img = new Image();
+        img.src = product.image;
+        img.onload = () => {
+          setLoadedImages((prev) => new Set(prev).add(product.image));
+        };
+      });
     } catch (error) {
       toast.error("Failed to fetch products", toastOptions);
     } finally {
@@ -169,9 +179,10 @@ function POSPage() {
                     <h5 className="pt-3">{product.name}</h5>
                     <img
                       src={product.image}
-                      className="img-fluid rounded"
+                      className={`img-fluid rounded ${
+                        loadedImages.has(product.image) ? "image-loaded" : "image-loading"
+                      }`}
                       alt={product.name}
-                      loading="lazy"
                     />
                     <p className="p-3">${product.price}</p>
                   </div>
