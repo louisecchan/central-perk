@@ -179,14 +179,21 @@
     max-width: 100vw;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
   .col-lg-8 {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+    order: 1;
   }
 
   .col-lg-4:not(.col-lg-8 .col-lg-4) {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+    order: 2;
   }
 
   .col-lg-8 .row .col-lg-4 {
