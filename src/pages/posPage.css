@@ -507,7 +507,8 @@ h5 {
 }
 
 .receipt-close-btn:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: transparent;
+  color: #666;
 }
 
 .receipt-actions {
@@ -533,7 +534,9 @@ h5 {
 }
 
 .btn-mobile-print:hover {
-  background-color: #000;
+  background-color: white;
+  color: #232222;
+  border: 1px solid #232222;
 }
 
 /* Hide modal elements when printing */
