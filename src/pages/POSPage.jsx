@@ -167,7 +167,9 @@ function POSPage() {
       <div className="row">
         <div className="col-lg-8">
           {isLoading ? (
-            <p className="loading-text">Loading</p>
+            <div className="loading-spinner-container">
+              <div className="loading-spinner"></div>
+            </div>
           ) : (
             <div className="row">
               {products.map((product, key) => (
