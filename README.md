@@ -1,6 +1,6 @@
 # Central-Perk POS 👨‍👨‍👧‍👧 
 
-**Coffee Shop Point-of-Sale App** — a lightweight, stylish POS web application for coffee shops, inspired by the iconic *Central Perk* café from *Friends*!
+**Coffee Shop Point-of-Sale App** — a lightweight POS web application for coffee shops, inspired by the iconic *Central Perk* café from *Friends*!
 
 ## Demo
 
